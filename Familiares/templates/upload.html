@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% include 'navbar.html' %}
+</head>
+<body>
+    {% comment %} <form action = "/app-familiares" method = 'GET'> 
+        <input type = 'text' name = 'nombre'>
+        <input type = 'submit' value = 'Agregar'>
+    </form> {% endcomment %}
+    <p>Para agregar nuevo familiares se deben sustituir los siguientes tags (nombre, dni y nacimiento) en el siguiente link </p>
+   <a href = " http://127.0.0.1:8000/app-familiares/agregar-familia<nombre>/<dni>/<nacimiento>"> Link</a>
+<p> <strong>EJEMPLO:</strong> <br> http://127.0.0.1:8000/app-familiares/agregar-familia/Juan/22345/2004-12-12</p>
+</body>
+
+</html>
